@@ -93,7 +93,7 @@
 
 ![image](https://github.com/user-attachments/assets/1a1b5b1b-e4c5-4381-a98c-036c8f7e5ac5)
 
-点击中右侧的三角按钮，可以看到字体大小更改的菜单，有三种字体可以选择：小、中(默认)，大
+点击中右侧的三角按钮，可以看到字体大小更改的菜单，有三种字体可以选择：小、中(默认)、大
 
 ![image](https://github.com/user-attachments/assets/4e5defd2-03fc-4ff4-b6ac-746f5dd8713a)
 
@@ -111,12 +111,60 @@
 
 ![image](https://github.com/user-attachments/assets/7c3c9dc0-3e01-4373-9a86-b349a4372338)
 
+将搜索按钮放在笔记首页的最上方（显眼且美观）
+
+![image](https://github.com/user-attachments/assets/1268ef90-8d54-428f-b425-adc6f7a1dc78)
+
+将保存和删除按钮放在编辑笔记界面的最下方（显眼且美观）
+
+![image](https://github.com/user-attachments/assets/2eed936a-f3b6-4838-a383-d3effae7150a)
+
+4.ui界面美化
+
+将编辑笔记界面的标题与内容上下分层，更改选项放在其二中间（层次分明）
+
+![image](https://github.com/user-attachments/assets/e8beb5c4-7196-4b63-b112-c6db1556becb)
+
+二、代办功能
+
+在笔记首页点击笔记“111”和“222”的勾选按钮，笔记“111”和“222”的背景变深，表示代办完成（弹出toast：已完成代办）
+
+![image](https://github.com/user-attachments/assets/46b810bb-db2c-4db7-bd5c-f0b55b1fb05c)
+
+三、分类功能
+
+在笔记的编辑界面，可以对笔记进行分类
+
+![image](https://github.com/user-attachments/assets/583180a7-758c-4723-829f-35c63f9df775)
+
+点击学习右侧的三角按钮，可以看到分类更改的菜单，有三种分类可以选择：学习（默认）、工作、生活
+
+![image](https://github.com/user-attachments/assets/604f6e5c-9252-4f42-b851-735f6c552bb2)
+
+点击学习，可以看到笔记“111”被分类为学习
+
+![f56fbee0-c8b1-43b9-a161-78ab40d1968b](https://github.com/user-attachments/assets/731935f3-b61a-4216-b9b9-e4d3deb6f76d)
+
+点击工作，可以看到笔记“222”被分类为学习
+
+![image](https://github.com/user-attachments/assets/8d15ef01-1fd2-45c7-ac8e-dd8d7e51478a)
+
+点击生活，可以看到笔记“333”被分类为生活
+
+![image](https://github.com/user-attachments/assets/8a01c149-5bba-4444-be18-afb5abdb78bd)
+
+点击保存后可以看到笔记首页中，三个笔记的分类被修改
+
+![image](https://github.com/user-attachments/assets/2b2266f5-a35d-48d5-81c5-33914247f263)
 
 技术框架
+
 1.布局主要选用线性布局，因为满足需求的情况下，此布局消耗资源少，部分选用约束布局
+
 2.数据库的存储使用SQLite数据库，是Android原生自带的数据库，安全，高校
+
 3.关于编辑器的字体和背景设置，采用sharedPreferences存储到本地，sp存储适合存储app的一些基础配置
 
 优化点：
-首页列表的NotesAdapter里，我选择在NoteViewHolder里进行view的绑定，避免了在onBindViewHolder进行绑定
-因为recycleView的缓存刷新机制，这样可以减少findViewById的IO操作，提高性能，减少内存消耗；
+
+首页列表的NotesAdapter里，我选择在NoteViewHolder里进行view的绑定，避免了在onBindViewHolder进行绑定因为recycleView的缓存刷新机制，这样可以减少findViewById的IO操作，提高性能，减少内存消耗；
