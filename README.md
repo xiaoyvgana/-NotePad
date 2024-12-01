@@ -1,7 +1,7 @@
-基本功能
-一、记事本编辑功能
+# 基本功能
+## 一、记事本编辑功能
 
-1.记事本的标题与内容编写，保存；
+### 1.记事本的标题与内容编写，保存；
 
 点击添加笔记按钮
 
@@ -15,7 +15,7 @@
 
 ![c14d3ff4765fbf94468fad8daae63629](https://github.com/user-attachments/assets/1192cf98-1fb6-4a3b-872d-d8ca09cae8e4)
 
-2.每条笔记可删除或者再次编辑；
+### 2.每条笔记可删除或者再次编辑；
 
 点击已经保存的笔记“hello world”，进入笔记的编辑页面
 
@@ -29,7 +29,7 @@
 
 ![5706585032ee694076a27ba6afa03d41](https://github.com/user-attachments/assets/278cd14a-181b-453b-8f5d-ba4ce5ecb456)
 
-3.时间戳显示
+### 3.时间戳显示
 
 可以看到笔记“today”的时间戳显示为“24-11-28 07-14”（此日期为笔记“today”的最后编辑日期）
 
@@ -45,15 +45,15 @@
 
 ![image](https://github.com/user-attachments/assets/a8f39bd6-5d50-4b2b-9af3-87b0ed6b0871)
 
-二、首页
+## 二、首页
 
-1.所有笔记的列表展示功能
+### 1.所有笔记的列表展示功能
 
 笔记的首页将所有的笔记以列表的形式展示
 
 ![image](https://github.com/user-attachments/assets/bab95f18-680d-420b-aebc-90931f3d466f)
 
-2.笔记可以搜索，去匹配数据库的所有数据，筛选后进行展示
+### 2.笔记可以搜索，去匹配数据库的所有数据，筛选后进行展示
 
 笔记的首页的上方可以进行搜索功能，我们先创建三个笔记，创建的笔记如下：
 
@@ -65,11 +65,11 @@
 
 ![image](https://github.com/user-attachments/assets/3fe29a02-ddd4-44f9-87e6-d6a2d4909f50)
 
-扩展功能
+# 扩展功能
 
-一、ui美化
+## 一、ui美化
 
-1.新增更改笔记背景功能
+### 1.新增更改笔记背景功能
 
 进入笔记“111”的编辑界面
 
@@ -87,7 +87,7 @@
 
 ![image](https://github.com/user-attachments/assets/d4d32b65-1eb4-45ab-81ba-7b79a4d348fe)
 
-2.新增更改笔记字体大小功能
+### 2.新增更改笔记字体大小功能
 
 进入笔记“111”的编辑界面
 
@@ -105,7 +105,7 @@
 
 ![image](https://github.com/user-attachments/assets/37ebabf0-5b55-4666-92ca-ded009378717)
 
-3.ui按钮美化
+### 3.ui按钮美化
 
 将新增笔记的按钮放在笔记首页的最下方（显眼且美观）
 
@@ -119,19 +119,19 @@
 
 ![image](https://github.com/user-attachments/assets/2eed936a-f3b6-4838-a383-d3effae7150a)
 
-4.ui界面美化
+### 4.ui界面美化
 
 将编辑笔记界面的标题与内容上下分层，更改选项放在其二中间（层次分明）
 
 ![image](https://github.com/user-attachments/assets/e8beb5c4-7196-4b63-b112-c6db1556becb)
 
-二、代办功能
+## 二、代办功能
 
 在笔记首页点击笔记“111”和“222”的勾选按钮，笔记“111”和“222”的背景变深，表示代办完成（弹出toast：已完成代办）
 
 ![image](https://github.com/user-attachments/assets/46b810bb-db2c-4db7-bd5c-f0b55b1fb05c)
 
-三、分类功能
+## 三、分类功能
 
 在笔记的编辑界面，可以对笔记进行分类
 
@@ -157,14 +157,14 @@
 
 ![image](https://github.com/user-attachments/assets/2b2266f5-a35d-48d5-81c5-33914247f263)
 
-技术框架
+# 技术框架
 
-1.布局主要选用线性布局，因为满足需求的情况下，此布局消耗资源少，部分选用约束布局
+## 1.布局主要选用线性布局，因为满足需求的情况下，此布局消耗资源少，部分选用约束布局
 
-2.数据库的存储使用SQLite数据库，是Android原生自带的数据库，安全，高校
+## 2.数据库的存储使用SQLite数据库，是Android原生自带的数据库，安全，高校
 
-3.关于编辑器的字体和背景设置，采用sharedPreferences存储到本地，sp存储适合存储app的一些基础配置
+## 3.关于编辑器的字体和背景设置，采用sharedPreferences存储到本地，sp存储适合存储app的一些基础配置
 
-优化点：
+# 优化点：
 
 首页列表的NotesAdapter里，我选择在NoteViewHolder里进行view的绑定，避免了在onBindViewHolder进行绑定因为recycleView的缓存刷新机制，这样可以减少findViewById的IO操作，提高性能，减少内存消耗；
