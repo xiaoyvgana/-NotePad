@@ -1,0 +1,142 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="内容编辑"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <!-- 标题输入框 -->
+    <EditText
+        android:layout_marginTop="3dp"
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标题"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_marginVertical="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/bgColorSpinnerti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="背景"
+            android:entries="@array/bg_color_options" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#4d000000"/>
+
+        <TextView
+            android:text="字号"
+            android:gravity="center"
+            android:id="@+id/fontSizeSpinnerti"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/font_size_options" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#4d000000"/>
+
+        <TextView
+            android:text="类型"
+            android:gravity="center"
+            android:id="@+id/typeSpinnerti"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/font_size_options" />
+    </LinearLayout>
+
+    <!-- 编辑器设置区域 -->
+    <LinearLayout
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/bgColorSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/bg_color_options" />
+
+        <Spinner
+            android:id="@+id/fontSizeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/font_size_options" />
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/type_options" />
+    </LinearLayout>
+
+    <!-- 笔记内容编辑框 -->
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:padding="16dp"
+        android:hint="请输入内容..." />
+
+    <!-- 操作按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/action_next_bg_c_30"
+            android:text="保存" />
+
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/action_next_bg_c_30"
+            android:text="删除" />
+    </LinearLayout>
+</LinearLayout>

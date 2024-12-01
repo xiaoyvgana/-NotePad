@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">笔记本</string>
+
+    <string-array name="bg_color_options">
+        <item>白色</item>
+        <item>灰色</item>
+        <item>黄色</item>
+    </string-array>
+
+    <string-array name="font_size_options">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+    <string-array name="type_options">
+        <item>学习</item>
+        <item>工作</item>
+        <item>生活</item>
+    </string-array>
+
+</resources>

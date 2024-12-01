@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="12dp"
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索笔记"
+        android:padding="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="30dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:background="@drawable/action_next_bg_c_30"
+        android:textSize="17sp"
+        android:id="@+id/addButton"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:text="新增笔记"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="22.5dp"/>
+
+</LinearLayout>
